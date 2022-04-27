@@ -104,5 +104,11 @@ mysql users:
 	 	pass: password
 		
 you can follow: https://www.youtube.com/watch?v=46_hyK-uBrQ
+
+
+if the creating user for mysql dosen't work then use this:
+GRANT ALL PRIVILEGES ON *.* TO 'userName'@'%' WITH GRANT OPTION;
+GRANT ALL ON `user`.* TO 'user'@'localhost';
+SELECT user,authentication_string,plugin,host FROM mysql.user;
 	
 
